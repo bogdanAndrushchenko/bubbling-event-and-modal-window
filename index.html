@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 Module</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Всплытие событий</h1>
+
+    <div id="parent">
+        parent
+        <div id="child">
+            child
+            <div id="inner-child">inner-child</div>
+        </div>
+    </div>
+    <!-- ////////////// -->
+    <h1>Делегирование событий</h1>
+
+
+    <ul class="tags js-tags">
+        <li class="tags__item">
+            <button class="tags__btn" data-value="html">#html</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="css">#css</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="javascript">#javascript</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="npm">#npm</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="webpack">#webpack</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="react">#react</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="redux">#redux</button>
+        </li>
+        <li class="tags__item">
+            <button class="tags__btn" data-value="nodejs">#nodejs</button>
+        </li>
+    </ul>
+
+    <p class="js-active-tag"></p>
+    <!--////////////////   MODAL   ////////////////-->
+    <button class="button" data-action="open-modal">Open modal</button>
+
+    <div class="backdrop js-backdrop">
+        <div class="modal">
+            <h2>Modal window</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ab modi eveniet tempore reiciendis error repellat magnam
+                veniam dolore delectus enim, velit asperiores
+                commodi molestiae, amet reprehenderit, cupiditate sunt
+                quae dolorem.
+            </p>
+            <button class="button" type="button" data-action="close-modal">Close</button>
+        </div>
+    </div>
+    <!--////////////////   MODAL   ////////////////-->
+
+    <script type="module" src="js/bubbling.js"></script>
+
+</body>
+
+</html>
