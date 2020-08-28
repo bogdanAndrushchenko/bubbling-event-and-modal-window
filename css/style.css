@@ -1,25 +1,23 @@
-#parent {
-    background-color: rgb(87, 210, 248);
-    width: 300px;
-    height: 300px;
-    padding: 30px;
-}
-
-#child {
-    background-color: rgb(52, 106, 122);
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    padding: 30px;
-}
-
-#inner-child {
-
-    background-color: rgb(87, 111, 248);
-    width: 100px;
-    height: 100px;
-    margin: auto;
-}
+#parent, #child, #inner-child {
+    margin: 1rem;
+    padding: 16px;
+    outline: 1px solid #FFC107;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  #parent {
+    background-color: #673AB7;
+  }
+  
+  #child {
+    background-color: #448AFF;
+  }
+  
+  #inner-child {
+    background-color: #009688;
+  }
 
 .tags {
     display: flex;
